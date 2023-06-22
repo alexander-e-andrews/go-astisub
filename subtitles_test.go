@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/asticode/go-astisub"
+	"github.com/alexander-e-andrews/go-astisub"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -302,15 +302,14 @@ func TestSubtitles_ApplyLinearCorrection(t *testing.T) {
 	require.Equal(t, 15500*time.Millisecond, s.Items[2].EndAt)
 }
 
-
-func TestMyCustomCode(t *testing.T){
+func TestMyCustomCode(t *testing.T) {
 	t.Skip()
 	subs, err := astisub.OpenFile("example.en.vtt")
-	if err != nil{
+	if err != nil {
 		t.Error(err)
 	}
 	subs.Optimize()
 	subs.Unfragment()
 
-	t.Logf("%+v\n",subs.SimpleSearchSubtitles("Hi Everyone"))
+	t.Logf("%+v\n", subs.SimpleSearchSubtitles("Hi Everyone"))
 }
