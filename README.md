@@ -4,6 +4,7 @@
 [![Coveralls](https://coveralls.io/repos/github/asticode/go-astisub/badge.svg?branch=master)](https://coveralls.io/github/asticode/go-astisub)
 
 This is a Golang library to manipulate subtitles. 
+I forked this so I could have a simple search functionality. Would like to improve later
 
 It allows you to manipulate `srt`, `stl`, `ttml`, `ssa/ass`, `webvtt` and `teletext` files for now.
 
