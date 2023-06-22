@@ -301,3 +301,16 @@ func TestSubtitles_ApplyLinearCorrection(t *testing.T) {
 	require.Equal(t, 11*time.Second, s.Items[2].StartAt)
 	require.Equal(t, 15500*time.Millisecond, s.Items[2].EndAt)
 }
+
+
+func TestMyCustomCode(t *testing.T){
+	t.Skip()
+	subs, err := astisub.OpenFile("example.en.vtt")
+	if err != nil{
+		t.Error(err)
+	}
+	subs.Optimize()
+	subs.Unfragment()
+
+	t.Logf("%+v\n",subs.SimpleSearchSubtitles("Hi Everyone"))
+}
