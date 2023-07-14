@@ -311,5 +311,5 @@ func TestMyCustomCode(t *testing.T) {
 	subs.Optimize()
 	subs.Unfragment()
 
-	t.Logf("%+v\n", subs.SimpleSearchSubtitles("Hi Everyone"))
+	t.Logf("%+v\n", subs.SimpleSearchSubtitles("Team Canada"))
 }
